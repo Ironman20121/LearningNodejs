@@ -1,0 +1,75 @@
+GET http://localhost:3000/products
+
+### Create a product rated
+POST http://localhost:3000/products
+
+### Get a product by id 
+GET http://localhost:3000/asdasd
+
+### Update a product by id 
+PATCH http://localhost:3000/products/60a73de46e70d20d4808c765
+
+Content-Type: application/json 
+
+{
+    
+    "price":799
+    
+}
+
+### Delete a product by id 
+DELETE http://localhost:3000/anc
+
+#####
+GET http://localhost:3000/products/60a73de46e70d20d4808c765
+
+#######
+GET http://localhost:3000/test?name=!Mac&price=2399
+
+
+#####
+GET http://localhost:3000/test/123123123
+
+###
+POST  http://localhost:3000/test
+Content-Type: application/json
+
+{
+    "name":"imacpro",
+    "price":"4999"
+}
+
+#######
+POST http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+name=imach&price=4999
+
+######
+post http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name":"lenovo notepadas",
+    "price":12342
+
+}
+
+######## get prduct bu id 
+GET http://localhost:3000/products/60a729ff7250893108e07d96
+######### deleteing a  element
+DELETE http://localhost:3000/products/60a72bb1ed196e21e05573er
+
+
+#####
+PATCH http://localhost:3000/products/60a73de46e70d20d4808c765
+Content-Type: application/json
+
+{
+    "name":"lenosvo",
+    "price":99
+}
+
+
+###
+GET http://localhost:3000/products/60a73de46e70d20d4808c765
