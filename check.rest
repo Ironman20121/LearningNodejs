@@ -6,8 +6,8 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "Lenovo",
-  "price": 87000
+  "name": "Lenovo-1",
+  "price": 8700
 }
 
 ### GET a product by id
@@ -19,12 +19,12 @@ Content-Type: application/json
 
 {
   "nama":"lenovo",
-  "price": 3
+  "price": 4
 }
 
 
 ### Delete a product by id
-DELETE  http://localhost:3000/products/60a72b427250893108e07d99
+DELETE  http://localhost:3000/products/60aa1c47ab7ab71d9cc609de
 
 
 

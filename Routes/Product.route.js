@@ -1,5 +1,5 @@
 const express = require('express')
-
+const rate = require('../ratelimit')
 
 const router = express.Router();
 
@@ -19,7 +19,7 @@ router.delete('/:id',ProductController.deleteElementById)
 router.patch('/:id',ProductController.updatingElementbyId)
 
 //Create a new product
-router.post('/',ProductController.creatingNewProduct)
+router.post('/',rate.registerpost,ProductController.creatingNewProduct)
 
 
 

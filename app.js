@@ -1,7 +1,14 @@
 const express = require('express');
 const createError = require('http-errors');
+const  rate = require('./ratelimit')
 const dotenv = require('dotenv').config()
+
+
 const app = express()
+
+
+//rate limiter
+app.use(rate.limitany)
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
@@ -31,6 +38,7 @@ app.use((req, res, next) => {
     });
   });
 const PORT = process.env.PORT || 3000;
+
 app.listen(PORT,()=>{
     console.log(`Server start on port ${PORT}....`)
 })
